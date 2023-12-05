@@ -3,48 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet" />
-    <title>Jual Mobil</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script>
+      AOS.init();
+    </script>
+    <title>Showroom Mobil</title>
   </head>
   <body>
-    <!-- navbar -->
-    <div class="container-fluid position-fixed" id="nav">
-      <div class="widget HTML" data-version="1"id=HTML2>
-        <div class="widget-content">
-          <div style="display: scroll;position:fixed;bottom: 20px;right: 15px;">
-            <a href="https://api.whatsapp.com/send?phone=6287726420949&text=Halo Admin Saya ingin Tanya D'Wasiq" target="=blank">
-              <img src="img/whatsapp.png" alt="wanya" width="50px">
-            </a>
-  
-          </div>
+    <div class="widget HTML" data-version="1"id=HTML2>
+      <div class="widget-content">
+        <div style="display: scroll;position:fixed;bottom: 20px;right: 15px;">
+          <a href="https://api.whatsapp.com/send?phone=6287726420949&text=Halo Admin Saya ingin Tanya D'Wasiq" target="=blank">
+            <img src="img/whatsapp.png" alt="wanya" width="50px">
+          </a>
+
         </div>
-        <div class="container">
-          <nav class="navbar navbar-expand-lg navbar-dark  py-3" style="background-color: #383b53;">
-            <div class="row justify-content-center">
-                <div class="col-8">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                      <div class="navbar-nav">
-                          <a class="nav-link active me-3" aria-current="page" href="index.html">Home</a>
-                          <a class="nav-link me-3" href="indexjual.html">Jual</a>
-                          <a class="nav-link me-3" href="indexbeli.html">Beli</a>
-                        </div>
-                    </div>
-                </div>
-              </div>
-            </div>
-          </nav>
+      </div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm" style="background-color: #383b53;"  >
+      <div class="container">
+        <a id ="beranda"class="navbar-brand" href="index.html"><img src="img/logo.png" style="width: 50px;" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#banner-slide">Home</a>
+            </li>
+            
+            <li class="nav-item mx-5">
+              <a class="nav-link " href="#Konten">Beli</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="indexjual.html">Jual</a>
+            </li>
+            <li class="nav-item mx-5">
+              <a class="nav-link " href="#footer-home">Contak</a>
+            </li>
+          </ul>
         </div>
-    </div>
+      </div>
+    </nav>
     <!-- akhir navbar -->
     <!-- Slider Banner -->
-    <section class="hero-img container-fluid">
+    <section id="banner-slide" class="hero-img container-fluid">
       <div class="slide">
         <img src="img/slider 1.jpg" alt="slide1" />
       </div>
@@ -54,121 +62,101 @@
       <div class="slide">
         <img src="img/slider 2.jpg" alt="slide3" />
       </div>
-    </section>
-    <!-- Akhir slider Banner -->
-    <!-- Profile -->
-    <section id="Profile" class="container-fluid">
-      <div class="container-sm">
-        <div class="profile-judul text-center">
-          <h1>Showroom Mobil Bekas Jogja</h1>
-        </div>
-        <div class="row">
-          <div class="col-4">
-            <p>Merupakan Tempat Jual beli mobil bekas dengan kualitas sama seperti baru. Lokasi tempat ini ada di Yogyakarta.</p>
+      <div id="Profile"  class="container text-center">
+        <div class="col" style="padding-top: 3rem;">
+          <div class="col">
+            <div class="row text-center mb-3 pt-%">
+              <div class="col "><h2 class="fs-3" style="text-align: start; color: aliceblue;">Langkah Menjual Unit Mobil Bersama Kami</h2></div>
+              <div class="col"><img src="img/vektor.png" width="800px" alt=""></div>
+              <div class="col"></div>
+              <div class="col"></div>
           </div>
-          <div class="col-4">
-            <img src="img/logo.png" style="width: 200px; padding-left: 25%;" alt="logo" />
-          </div>
-          <div class="col-4">
-            <p>Dengan menjaga kualitas barang meskipun second mobil , namun dengan bekal sertifkat dan test drive membuat kepercayaan pelanggan No 1</p>
-          </div>
-        </div>
-        <br /><br />
-        <p class="alamat text-center">Jl. Gedongkuning No.34, Rejowinangun, Kec. Kotagede, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55171</p>
-        <div class="d-grid gap-2" pb-3>
-          <button class="btn btn-warning" type="button">Selengkapnya</button>
         </div>
       </div>
     </section>
-    <!-- Akhir Porfile -->
-    <!-- Content profile -->
-    <section id="product" style="background-color: white">
-        <div class="container-fluid">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-10">
-                <hr>
-                <br>
-              </div>
-              <div class="row justify-content-center skill-konten">
-                <div class="col-md-3">
-                  <div class="card p-3">
-                    <div class="row text-center text-sm-start">
-                      <div class="col border-10 sm-12">
-                        <img src="img/icon/grafis.png" style="width: 6rem;" alt="">
-                      </div>
-                      <div class="col pt-3" >
-                        <h3 class="text-start fw-bold">
-                          Graphic Design <br>
-                        </h3>
-                        <p class="text-start">Freelancer Grafis Desain 
-                          3 tahun (menyediakan jasa desain banner brosur, nota dll)</p>
-                      </div>
-                    </div>
-                  </div>
+    <!-- Akhir slider Banner -->
+    <!-- Content Product-->
+   <section id="Konten" style="background-color: aliceblue ;" >
+    <div class="container"  data-aos="fade-down">
+        <div class="col">
+          <div class="row text-center mb-3 pt-5">
+            <h1 style="color: #383b53 ">Unit Mobil Kami</h1>
+            <br>
+            <br>
+            <br>
+            <div class="row justify-content-center  ">
+                <div class="col-md-4 py-3">
+                  <a href="expander.html" target="_blank"><img src="gambar/Expander.png" alt="jauh" width="80%" class="img-thumbnail shadow"></a>
                 </div>
-                <div class="col-md-3">
-                  <div class="card p-3">
-                    <div class="row text-center text-sm-start">
-                      <div class="col border-10 sm-12">
-                        <img src="img/icon/uiux.png" style="width: 6rem;" alt="">
-                      </div>
-                      <div class="col pt-3" >
-                        <h3 class="text-start fw-bold">
-                          UI/UX Design<br>
-                        </h3>
-                        <p class="text-start">Menjadi Tim dan individual untukn merancang dan
-                          membuat ulang tampilan Antar Muka UI/UX (E-Learning, Kelola-In) selama berkuliah
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                <div class="col-md-4 py-3">
+                    <a href="crv.html"><img src="gambar/Honda CRV.png" alt="jauh" width="80%"class="img-shadow"></a>
+                </div> 
+                <div class="col-md-4 py-3">
+                  <a href="jazz.html"><img src="gambar/Honda Jazz.png" alt="jauh" width="80%"class="img-shadow"></a>
+                            
                 </div>
-                <div class="col-md-3">
-                  <div class="card p-3">
-                    <div class="row text-center text-sm-start">
-                      <div class="col border-10 sm-12">
-                        <img src="img/icon/Frontend.png" style="width: 6rem;" alt="">
-                      </div>
-                      <div class="col pt-3" >
-                        <h3 class="text-start fw-bold">
-                          Frontend Web<br>
-                        </h3>
-                        <p class="text-start">Merancang Website untuk Company profile
-                          Desa Wisata yang berbasis Web Frontend Sekaligus sebagai
-                          Project Skripisi
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                <div class="col-md-4 py-3">
+                  <a href="hrv.html"><img src="gambar/Honda HRV Matic.png" alt="jauh" width="80%"class="img-shadow"></a>
+                         
                 </div>
-                <div class="col-md-3">
-                  <div class="card p-3">
-                    <div class="row text-center text-sm-start">
-                      <div class="col border-10 sm-12">
-                        <img src="img/icon/Multimedia.png" style="width: 6rem;" alt="">
-                      </div>
-                      <div class="col pt-3" >
-                        <h3 class="text-start fw-bold">
-                          Multimedia Video<br>
-                        </h3>
-                        <p class="text-start">Asisten Dosen Praktikum selama 2 semester pada
-                          Matakuliah Multimedia Video dan Multimedia Lanjut 3D Modeling
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                <div class="col-md-4 py-3">
+                <a href="inova.html"><img src="gambar/Toyota Kijang Inova.png" alt="jauh" width="80%"class="img-shadow"></a>
+                      
                 </div>
-              </div>
+                <div class="col-md-4 py-3">
+                  <a href=""><img src="gambar/Toyota Avanza.png" alt="jauh" width="80%"class="img-shadow"></a>
+                         
+                </div>
+             
             </div>
           </div>
-        </div>
+      </div>
     </section>
+    <!-- Akhir Conten Produk -->
+    <!-- Brand Partner -->
+    <section id="Brand" style="padding-top: 5%;"  >
+      <div class="container"  data-aos="fade-down">
+          
+        </div>
+      </section>
+    <!-- AKhir Partner -->
     <!-- footer -->
-    <footer></footer>
+    <footer class="pt-5" id="footer-home">
+      <div class="container justify-content-center " >
+        <div class="row">
+          <div class="col" style="color: #D1CAA1;">
+            <h2>Kontak Person</h2>
+            <br>
+            <p>087726420949</p>
+            <p>Showroombekas@gmail.com</p>
+           </div>
+          <div id="alamat" class="col py-2" style="color: #D1CAA1 ;">
+            <h2 >Alamat</h2>
+            <br>
+            <iframe class="mb-3" width="750px" height="150px" style="border: 0px solid #000000" src="https://www.google.com/maps?q= Jl.+Gedongkuning+No.34,+Pringgolayan,+Rejowinangun,+Kec.+Kotagede,+Kota+Yogyakarta,+Daerah+Istimewa+Yogyakarta+55171 &amp;z=16&amp;t=m&amp;hl=id&amp;output=embed"></iframe>
+          </div>
+          <div class="col" style="color: #D1CAA1;">
+            <h2>Sosial Media</h2>
+            <br>
+              <div class="sosmed-icon2 text-center ">
+                <a href="https://www.linkedin.com/in/agunkun" target="_blank"><img src="img/Instagram.png" width="50" style="margin-right: 0.7em" /></a>
+                <a href="https://github.com/agunkunid" target="_blank"><img src="img/Tik tok.png" width="50" style="margin-right: 0.7em" /></a>
+                <a href="https://www.instagram.com/agunkun_id/" target="_blank"><img src="img/Youtube.png" width="50" style="margin-right: 0.7em" /></a>
+              </div>
+          </div>
+        </div>
+        <br><br><br>
+        <div style="text-align: center;">
+          <p style="color: #D1CAA1;">Copy Right || @Amikom Pride Skripsi || 2023</p>
+        </div>
+      </div>
+    </footer>
     <!-- Akhir Footer -->
-    <!-- akhir Jumbotron Hero -->
   </body>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <script src="app.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
