@@ -42,7 +42,7 @@ a:active {
 
 /* Hero _jumbo */
 #banner-slide {
-  height: 950px;
+  height: 1000px;
 }
 .hero {
   height: 200px;
@@ -77,7 +77,7 @@ a:active {
   align-items: center;
   justify-content: center;
   margin: 0;
- display: flex;
+  display: flex;
 }
 /* akhir Hero */
 /* Konten product */
@@ -149,7 +149,6 @@ hr {
   padding-right: 50%;
 }
 #tombol1 .button {
-  
   color: #fff;
   width: 500px;
   border-color: #383b53;
