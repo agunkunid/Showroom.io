@@ -1,0 +1,33 @@
+@media screen and (min-width: 768px){
+    #banner-slide{
+        padding-bottom: 15rem;
+    }
+    .hero{
+        width: 100%;
+    }
+    #banner-slide{
+        width: 20%;
+    }
+    #Profile .img {
+        width: 10px;
+    }
+    #Profile p{
+        text-align: justify;
+        font-size: 5%;
+    }
+    #Profile h1{
+        width: 2%;
+    }
+    #Profile .btn {
+        width: 35px;
+    }
+   
+    .btn-warning{
+        width: 5px;
+        padding-top: 5rem;
+    }
+    footer{
+
+        align-content: center;
+    }
+}

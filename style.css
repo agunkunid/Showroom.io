@@ -42,7 +42,7 @@ a:active {
 
 /* Hero _jumbo */
 #banner-slide {
-  height: 100vh;
+  height: 950px;
 }
 .hero {
   height: 200px;
@@ -74,10 +74,10 @@ a:active {
 }
 .btn-warning {
   background-color: orange;
-  display: flex;
   align-items: center;
   justify-content: center;
   margin: 0;
+ display: flex;
 }
 /* akhir Hero */
 /* Konten product */
