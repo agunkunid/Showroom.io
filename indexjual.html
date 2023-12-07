@@ -79,28 +79,60 @@
             <h1 style="color: #383b53 ">Form Pengumpulan Berkas</h1>
             <br>
             <br>
-            <br>
-            <div class="row justify-content-center  ">
-                <div class="col-md-4 py-3">
-                  <a href="expander.html" target="_blank"><img src="gambar/Expander.png" alt="jauh" width="80%" class="img-thumbnail shadow"></a>
-                </div>
-                <div class="col-md-4 py-3">
-                    <a href="crv.html"><img src="gambar/Honda CRV.png" alt="jauh" width="80%"class="img-shadow"></a>
-                </div> 
-                <div class="col-md-4 py-3">
-                  <a href="jazz.html"><img src="gambar/Honda Jazz.png" alt="jauh" width="80%"class="img-shadow"></a>
-                </div>
-                <div class="col-md-4 py-3">
-                  <a href="hrv.html"><img src="gambar/Honda HRV Matic.png" alt="jauh" width="80%"class="img-shadow"></a>
-                </div>
-                <div class="col-md-4 py-3">
-                <a href="inova.html"><img src="gambar/Toyota Kijang Inova.png" alt="jauh" width="80%"class="img-shadow"></a>
-                </div>
-                <div class="col-md-4 py-3">
-                  <a href=""><img src="gambar/Toyota Avanza.png" alt="jauh" width="80%"class="img-shadow"></a>        
-                </div>
+            <div class="container" style="color: #fff;"data-aos="fade-left">
+              <br>
+              <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+                <strong>Terima Kasih Atas Kepercayaan Anda</strong> pesan anda sedang kami proses
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+              <br> 
+                <form name="form-pembayaran" class="row" id="formbayar">
+                  <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">Nama Lengkap</label>
+                    <input type="text" class="form-control" id="validationCustom01" name="nama lengkap" required>
+                    <div class="valid-feedback">
+                     Berhasil terkirim
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationCustomUsername" class="form-label">No.Wa</label>
+                    <div class="input-group has-validation">
+                      <span class="input-group-text" id="inputGroupPrepend">08x</span>
+                      <input type="number" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required name="email">
+                      <div class="invalid-feedback">
+                        Tolong masukan no wa anda
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">Alamat</label>
+                    <input type="text" class="form-control" id="validationCustom01" name="nama lengkap" required>
+                    <div class="valid-feedback">
+                      Berhasil terkirim
+                    </div>
+                  </div>
+                  <div class="col text-align-center"><label for="gambar">STNK:</label>
+                    <input type="file" id="gambar" name="gambar" accept="image/*"></div>
+                  <div class="col"><label for="gambar">BPKB:</label>
+                    <input type="file" id="gambar" name="gambar" accept="image/*"></div>
+                  <div class="col"><label for="gambar">Foto Full Mobil:</label>
+                    <input type="file" id="gambar" name="gambar" accept="image/*"></div>
+                  </div>
+                    <div class="row text-center ">
+                      <div class="col cm mb-2" style="padding-top: 2rem;" >
+                        <button type="submit" id="kirim-btn"class="btn btn-info btn-kirim" style="background-color: orange; width: 100%; ">Kirim
+                      </div>
+                    </div>
+                  <button class="btn btn-info btn-loading d-none" type="button" disabled>
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" style="color: #fff;"></span>
+                  </button>
+                 
+                </form>
+                <br>
+                <br>
+                <br>
+              </di>
             </div>
-          </div>
       </div>
     </section>
     <!-- Akhir Content Form -->
